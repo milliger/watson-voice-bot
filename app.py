@@ -106,6 +106,7 @@ def getTextFromSpeech():
             content_type='audio/wav',
             timestamps=True,
             word_confidence=True,
+            model='de-DE_BroadbandModel',
             smart_formatting=True).get_result()
 
     # Ask user to repeat if STT can't transcribe the speech
